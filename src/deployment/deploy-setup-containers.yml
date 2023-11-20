@@ -39,7 +39,7 @@
     - name: Create frontend container
       docker_container:
         name: "frontend"
-        image: "gcr.io/{{ gcp_project }}/test-app-frontend-simple:main"  #{{ tag.stdout}}"
+        image: "gcr.io/{{ gcp_project }}/test-app-frontend-simple:{{ tag.stdout}}"
         state: started
         recreate: yes
         pull: yes
