@@ -17,4 +17,4 @@ all:
     children:
         appserver:
             hosts:
-                104.196.45.141:
+                35.190.157.125:

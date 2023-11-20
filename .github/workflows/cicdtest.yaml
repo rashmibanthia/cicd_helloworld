@@ -27,6 +27,6 @@ jobs:
       - name: Build container 
         run: |-
           cd ${{ github.workspace }}/src/frontend-simple/
-          docker build -t gcr.io/$GCLOUD_PROJECT/cicd-app-frontend-simple:${{ github.ref_name }} .
-          docker push gcr.io/$GCLOUD_PROJECT/cicd-app-frontend-simple:${{ github.ref_name }}
+          docker build -t gcr.io/$GCLOUD_PROJECT/test-app-frontend-simple:${{ github.ref_name }} .
+          docker push gcr.io/$GCLOUD_PROJECT/test-app-frontend-simple:${{ github.ref_name }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
